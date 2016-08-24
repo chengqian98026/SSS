@@ -42,7 +42,7 @@
 
         <div class="form-group">
             <label>邮政编码：</label>
-            <input name="zip" class="form-control" ng-model="data.shipping.zip"required />
+            <input name="zip" class="form-control" ng-model="data.shipping.zip" ng-pattern="/^[1-9]\d{5}$/" required />
             <span class="error" ng-show="shippingForm.name.$error.required && shippingForm.zip.$dirty">请输入邮政编码</span>
         </div>
 
